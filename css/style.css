@@ -1,0 +1,129 @@
+:root{
+    --nutmeg: hsl(14, 45%, 36%);
+    --Dark-Raspberry: hsl(332, 51%, 32%);
+    --White: hsl(0, 0%, 100%);
+    --Rose-White: hsl(330, 100%, 98%);
+    --Eggshell: hsl(30, 54%, 90%);
+    --Light-Grey: hsl(30, 18%, 87%);
+    --Wenge-Brown: hsl(30, 10%, 34%);
+    --Dark-Charcoal: hsl(24, 5%, 18%);
+}
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+@font-face {
+    font-family: 'Young-Serif';
+    src: url('../assets/fonts/young-serif/YoungSerif-Regular.ttf');
+}
+@font-face {
+    font-family: 'Outfit';
+    src: url('../assets/fonts/outfit/Outfit-VariableFont_wght.ttf');
+}
+
+body{     
+    background-color: var(--Eggshell);     
+    color: var(--Wenge-Brown);
+    font-family: 'Outfit', sans-serif;  
+    font-size: 16px;  
+
+    margin: 0;  
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    color: var(--Dark-Charcoal);
+    font-size: 3rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    
+}
+h1,h3{
+    font-family: 'Young-Serif', sans-serif;
+    font-size: 3rem;
+}
+h4{
+    font-size: 2rem;
+    color: var(--Dark-Raspberry);
+    margin-top: 1.2rem;
+    margin-bottom: 1.2rem;
+}
+p{  
+    font-size: 1.9rem;
+    font-weight: bol;   
+}
+
+main{
+    background-color: var(--White);
+    width: 100%;    
+}
+
+section{
+    margin: 5.2rem;
+}
+
+img{
+    width: 100%;
+    margin: 0;
+}
+li{
+    margin-bottom: 1rem;
+}
+table{
+    width: 100%;
+}
+td{
+    width: 50%;
+}
+.recipe, .ingredients, .instructions, .nutrition, .preparation-time{
+    margin: 3rem;
+}
+.calories-value{
+    font-weight: bold;
+}
+.preparation-time{
+    background-color: var(--Rose-White);
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+/* Desktop */
+@media(min-width: 375px){
+    main{
+        width: 90rem;
+        border-radius: 3rem;
+        margin-top: 13rem;
+        margin-bottom: 11rem;
+    }
+    h1{
+        font-size: 4.8rem;
+    }
+    p{
+        font-size: 2rem;
+    }
+
+    img{
+        width: 100%;
+        margin: 0;
+        border-radius: 1rem;
+    }
+
+    .img-container{
+        width: 80rem;
+        margin: 5rem;
+    }
+    
+    .recipe, .ingredients, .instructions, .nutritio, .preparation-time{
+        margin: 3rem;
+    }
+    
+}
+
+
